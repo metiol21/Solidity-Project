@@ -1,1 +1,1 @@
-# Solidity-Project
+# Solidity assignment for introduction to blockchain
