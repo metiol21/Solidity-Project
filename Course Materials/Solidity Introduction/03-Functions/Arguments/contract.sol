@@ -8,11 +8,10 @@ contract ContractTest is Test {
     Contract public myContract;
 
     function setUp() public {
-        myContract = new Contract();
+        myContract = new Contract(5);
     }
 
-    function testDouble() public {
-        assertEq(myContract.double(2), 4);
-        assertEq(myContract.double(4), 8);
+    function testConstructor() public {
+        assertEq(myContract.x(), 5);
     }
 }
